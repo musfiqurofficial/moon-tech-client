@@ -27,6 +27,7 @@ const ProductCard = ({ product }) => {
           Add to cart
         </button>
         <button
+          onClick={() => dispatch({ type: actionType.ADD_TO_WISHLIST, payload: product })}
           title='Add to wishlist'
           className='bg-indigo-500  py-1 px-2 rounded-full'
         >
